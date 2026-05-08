@@ -1,7 +1,7 @@
 {
   "name": "DATA 730 assignment",
   "image": "ghcr.io/prefix-dev/pixi:latest",
-  "onCreateCommand": "pixi install --locked || pixi install",
+  "onCreateCommand": "apt-get update && apt-get install -y --no-install-recommends git openssh-client && rm -rf /var/lib/apt/lists/* && (pixi install --locked || pixi install)",
   "postAttachCommand": {
     "jupyterlab": "pixi run lab"
   },
