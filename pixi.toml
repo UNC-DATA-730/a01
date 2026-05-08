@@ -18,6 +18,8 @@ scikit-learn = "*"
 plotnine = "*"
 statsmodels = "*"
 altair = "*"
+patsy = "*"
+pyarrow = "*"
 ipykernel = "*"
 jupyterlab = "*"
 
